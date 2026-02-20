@@ -16,37 +16,37 @@ export function PrinciplesSection() {
     {
       number: "01",
       titleParts: [
-        { text: "INTERFACE", highlight: true },
-        { text: " MINIMALISM", highlight: false },
+        { text: "USER-CENTRIC", highlight: true },
+        { text: " DESIGN", highlight: false },
       ],
-      description: "Reduce until only the essential remains. Every element earns its place.",
+      description: "Every product begins with understanding the user. I design with empathy, creating solutions that are intuitive, accessible, and solve real problems.",
       align: "left",
     },
     {
       number: "02",
       titleParts: [
-        { text: "SYSTEMS", highlight: true },
-        { text: " OVER SCREENS", highlight: false },
+        { text: "CODE ", highlight: false },
+        { text: "CRAFTSMANSHIP", highlight: true },
       ],
-      description: "Design behaviors, not just layouts. Build logic that scales.",
+      description: "Clean, maintainable code is an art form. I write code with clarity and precision, building systems that scale and endure.",
       align: "right",
     },
     {
       number: "03",
       titleParts: [
-        { text: "CONTROLLED ", highlight: false },
-        { text: "TENSION", highlight: true },
+        { text: "CONTINUOUS ", highlight: false },
+        { text: "LEARNING", highlight: true },
       ],
-      description: "Balance between restraint and expression. Confidence without excess.",
+      description: "Technology evolves constantly. I stay ahead by learning new frameworks, techniques, and best practices to deliver cutting-edge solutions.",
       align: "left",
     },
     {
       number: "04",
       titleParts: [
-        { text: "SIGNAL ", highlight: false },
-        { text: "CLARITY", highlight: true },
+        { text: "ATTENTION TO ", highlight: false },
+        { text: "DETAIL", highlight: true },
       ],
-      description: "Communication that cuts through noise. Precision in every interaction.",
+      description: "The difference between good and great is in the details. Pixels matter, performance matters, user experience matters.",
       align: "right",
     },
   ]
@@ -93,8 +93,8 @@ export function PrinciplesSection() {
     <section ref={sectionRef} id="principles" className="relative py-32 pl-6 md:pl-28 pr-6 md:pr-12">
       {/* Section header */}
       <div ref={headerRef} className="mb-24">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">03 / Principles</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">HOW WE WORK</h2>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">03 / About</span>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">MY APPROACH</h2>
       </div>
 
       {/* Staggered principles */}

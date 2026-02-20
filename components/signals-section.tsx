@@ -9,29 +9,29 @@ gsap.registerPlugin(ScrollTrigger)
 
 const signals = [
   {
-    date: "2025.06.10",
-    title: "Signal Field",
-    note: "New interface paradigm for ambient computing environments.",
+    date: "2025.02.15",
+    title: "Building Scalable Design Systems",
+    note: "A comprehensive guide to creating maintainable component libraries and design tokens.",
   },
   {
-    date: "2025.05.28",
-    title: "Silent Agent",
-    note: "Orchestration layer for autonomous design systems.",
+    date: "2025.01.28",
+    title: "Next.js App Router Best Practices",
+    note: "Deep dive into server components, caching strategies, and performance optimization.",
   },
   {
-    date: "2025.05.15",
-    title: "Noir Grid",
-    note: "Typographic system for editorial interfaces.",
+    date: "2025.01.10",
+    title: "The Art of Micro-interactions",
+    note: "How subtle animations and feedback loops elevate user experience.",
   },
   {
-    date: "2025.04.30",
-    title: "Project Lattice",
-    note: "Structural framework for adaptive layouts.",
+    date: "2024.12.20",
+    title: "TypeScript for Large Teams",
+    note: "Managing complexity with strict types and shared conventions.",
   },
   {
-    date: "2025.04.12",
-    title: "Echo Chamber",
-    note: "Audio-visual synthesis in browser environments.",
+    date: "2024.11.05",
+    title: "Accessible UI Design Patterns",
+    note: "Practical techniques for building inclusive digital products.",
   },
 ]
 
@@ -135,8 +135,8 @@ export function SignalsSection() {
 
       {/* Section header */}
       <div ref={headerRef} className="mb-16 pr-6 md:pr-12">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">01 / Signals</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">WHAT&apos;S NEW</h2>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Articles</span>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">LATEST WRITING</h2>
       </div>
 
       {/* Horizontal scroll container */}
@@ -172,20 +172,20 @@ function SignalCard({
       )}
     >
       {/* Card with paper texture effect */}
-      <div className="relative bg-card border border-border/50 md:border-t md:border-l md:border-r-0 md:border-b-0 p-8">
+      <div className="relative bg-card/50 border border-border/40 hover:border-accent/40 transition-colors duration-300 md:border-t md:border-l md:border-r-0 md:border-b-0 p-8">
         {/* Top torn edge effect */}
         <div className="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-border/40 to-transparent" />
 
         {/* Issue number - editorial style */}
         <div className="flex items-baseline justify-between mb-8">
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-            No. {String(index + 1).padStart(2, "0")}
+            Article {String(index + 1).padStart(2, "0")}
           </span>
           <time className="font-mono text-[10px] text-muted-foreground/60">{signal.date}</time>
         </div>
 
         {/* Title */}
-        <h3 className="font-[var(--font-bebas)] text-4xl tracking-tight mb-4 group-hover:text-accent transition-colors duration-300">
+        <h3 className="font-[var(--font-bebas)] text-3xl tracking-tight mb-4 group-hover:text-accent transition-colors duration-300">
           {signal.title}
         </h3>
 
@@ -194,6 +194,14 @@ function SignalCard({
 
         {/* Description */}
         <p className="font-mono text-xs text-muted-foreground leading-relaxed">{signal.note}</p>
+
+        {/* Read more link */}
+        <div className="mt-6 pt-4 border-t border-border/20">
+          <a href="#" className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-accent hover:gap-3 transition-all duration-200">
+            Read More
+            <span>→</span>
+          </a>
+        </div>
 
         {/* Bottom right corner fold effect */}
         <div className="absolute bottom-0 right-0 w-6 h-6 overflow-hidden">

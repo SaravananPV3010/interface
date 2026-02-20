@@ -18,9 +18,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "SIGNAL — Experimental Creative Studio",
+  title: "Saravanan — Creative Developer & Designer",
   description:
-    "Interface studies in controlled environments. We design systems that behave, not just screens that display.",
+    "Portfolio of a creative developer and designer specializing in building elegant, performant, and user-centered digital products.",
   generator: "v0.app",
   icons: {
     icon: [
